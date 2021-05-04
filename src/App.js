@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import { Container } from "semantic-ui-react";
 
 import "semantic-ui-css/semantic.min.css";
@@ -16,7 +16,7 @@ import Register from "./pages/Register";
 function App() {
   return (
     <AuthProvider>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router hashType="noslash">
         <Container>
           <MenuBar />
           <Route Route exact path="/" component={Home} />
