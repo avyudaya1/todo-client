@@ -1,17 +1,25 @@
 {
+  "homepage": "http://avyudaya1.github.io/todo-client/",
   "name": "todo-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "@apollo/client": "^3.3.16",
+    "apollo-link-context": "^1.0.20",
+    "graphql": "^15.5.0",
+    "graphql-tag": "^2.12.4",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
